@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload de Prova PDF</title>
+</head>
+<body>
+  <h1>Processador de Provas - GPTPDF</h1>
+  <form action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="pdf_file" accept="application/pdf" required>
+    <button type="submit">Enviar</button>
+  </form>
+  {% if markdown %}
+  <h2>Saída em Markdown:</h2>
+  <pre style="white-space: pre-wrap;">{{ markdown }}</pre>
+  {% endif %}
+</body>
+</html>
