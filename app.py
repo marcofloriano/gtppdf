@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 # Recomendado: mover para variável de ambiente em produção
-OPENAI_API_KEY = "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"  # substitua pela sua chave real
+OPENAI_API_KEY = ""  # substitua pela sua chave real
 
 @app.route("/", methods=["GET"])
 def index():
